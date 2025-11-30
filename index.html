@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <link href="./src/output.css" rel="stylesheet">
+  </head>
+  <body class="bg-black snap-y snap-mandatory">
+    <!-- first landing viewport -->
+    <section class="relative w-full h-screen overflow-hidden snap-start snap-always">
+      <!-- navigation bar -->
+      <nav class="relative z-10 flex items-center justify-center p-6 mx-auto">
+        <div class="hidden md:flex gap-8 text-base font-medium text-gray-200">
+          <a href="#aboutus" class="hover:text-violet-600 transition-colors">About Us</a>
+          <a href="#services" class="hover:text-violet-600 transition-colors">Services</a>
+          <a href="#" class="hover:text-violet-600 transition-colors">How We Work</a>
+          <a href="#testimonials" class="hover:text-violet-600 transition-colors">Testimonials</a>
+          <a href="#" class="hover:text-violet-600 transition-colors">FAQ</a>
+        </div>
+      </nav>
+      <!-- end of navigation bar -->
+
+      <!-- video background -->
+      <video 
+        autoPlay
+        loop
+        muted
+        playsInline
+        class="absolute top-0 left-0 w-full h-full object-cover -z-10 brightness-70 opacity-50"
+      >
+        <source src="./media/3/three.mp4" type="video/mp4" />
+      </video>
+      <!-- end of video background -->
+
+      <!-- ui of first viewport -->
+      <div class="relative z-10 flex flex-col justify-center items-center h-full">
+        <!-- Social proof -->
+        <div class="border border-white rounded-full inline-flex items-center gap-3 px-4 py-2 mb-8 bg-white/5 rounded-full backdrop-blur-sm hover:border-violet-600/50 transition-colors cursor-pointer group">
+          <!-- avatar groups -->
+          <div class="flex -space-x-2">
+            <img src="https://i.pravatar.cc/100?img=54" class="w-6 h-6 rounded-full border border-black" alt="Avatar"/>
+            <img src="https://i.pravatar.cc/100?img=23" class="w-6 h-6 rounded-full border border-black" alr="Avatar"/>
+            <img src="https://i.pravatar.cc/100?img=34" class="w-6 h-6 rounded-full border border-black" alt="Avatar"/>
+          </div>
+          <!-- end of avatar groups -->
+          <!-- wrtings  -->
+          <span class="text-sm font-medium text-gray-300">What Others Say About Us</span>
+          <span class="text-gray-500 group-hover:translate-x-1 transition-transform">→</span>
+          <!-- end of wrtings  -->
+        </div>
+        <!-- end of social proof -->
+
+        <!-- main headline -->
+        <h1 class="text-5xl md:text-7xl font-black tracking-tight max-w-5xl mx-auto">
+          <span class="text-violet-600 block text-center">HydraMed</span>
+          <span class="text-white"=>Beat the Medical Hydra 🔱🐉</span>
+        </h1>
+        <!-- end of main headline -->
+
+        <!-- subheadline -->
+        <p class="mt-8 text-lg text-gray-300 max-w-xl text-center mx-auto leading-relaxed">
+          Defeat medical school overwhelm with AI tools for transcription, TTS, medical text extraction and much more!
+        </p>
+        <!-- end of subheadline -->
+
+        <!-- create an acount button -->
+        <button class="bg-violet-500 text-black text-lg font-bold mt-10 px-8 py-4 rounded-lg hover:scale-105 hover:shadow-[0_0_30px_rgba(168,85,247,0.4)] transition-all">
+          Create Your Account Now
+        </button>
+        <!-- end of create an acount button -->
+      </div>
+      <!-- end of ui of first viewport -->
+    </section>
+    <!-- end of first landing viewport -->
+
+    <!-- about us section -->
+    <section id="aboutus" class="relative w-full px-24 md:px-32 py-24 md:py-32 snap-start snap-always">
+      <!-- about us headers -->
+      <div class="mb-10 max-x-4xl">
+        <h2 class="text-5xl md:text-7xl font-black tracking-tight mb-6 text-white">
+          Win <span class="text-violet-600">Time</span> <br/>
+          <span class="text-violet-600">And</span> Effort
+        </h2>
+        <p class="text-gray-400 text-lg md:text-xl max-w-xl">
+          As a medical student myself, I know the value that time and energy represent for the medical staff. Starting from today, you shouldn't do the repetitive tasks, let our AI do it for you, while you can focus on what is important: saving lives !!
+        </p>
+      </div>
+      <!-- end of about us headers -->
+
+      <!-- about us demonstration -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 rounded-3xl overflow-hidden bg-violet-300 hover:scale-105 hover:shadow-[0_0_50px_rgba(168,85,247,0.4)] transition-all">
+        <!-- LEFT: Text content -->
+        <div class="p-10 flex flex-col justify-center">
+          <!-- the rocket icon -->
+          <div class="size-16 rounded-full flex items-center justify-center bg-violet-600">
+            <img src="./media/3/rocket.svg" alt="Rocket Icon" class="size-8 object-contain"/>
+          </div>
+          <!-- end of the rocket icon -->
+          <!-- headlines -->
+          <h3 class="mt-8 text-3xl md:text-4xl font-black text-violet-600 leading-tight">
+            Rise Above Overwhelm With AI-Powered Medical Mastery
+          </h3>
+          <p class="text-slate-950 text-lg font-medium leading-relaxed">
+            HydraMed transforms daily medical chaos into clarity by automating the tasks that drain your time and focus. From smart transcription to lightning-fast medical text processing, our AI tools free your mind from the Hydra’s many heads—so you can concentrate on the mission that matters: becoming the healer you aspire to be.
+          </p>
+          <!-- end of headlines -->
+        </div>
+        <!-- end of LEFT: Text content -->
+
+        <!-- RIGHT: 3d Image area -->
+        <div class="relative h-full">
+          <img src="./media/3/dna.jpg" alt="DNA Image" class="absolute insert-0 w-full h-full object-cover"/>
+        </div>
+        <!-- end of RIGHT: 3d Image area -->
+      </div>
+      <!-- end of about us demonstration -->
+
+    </section>
+    <!-- end of about us section -->
+
+    <!-- our services section -->
+    <section id="services" class="relative w-full px-14 md:px-22 py-14 md:py-22 snap-start snap-always">
+      <!-- our services headers -->
+      <div class="mb-10 max-x-4x h-full flex flex-col items-center justify-center">
+        <h2 class="text-5xl md:text-7xl font-black tracking-tight mb-6 text-white">
+          <span class="block text-center">Our</span>
+          <span class="text-violet-600">Services</span> Hub
+        </h2>
+        <p class="text-gray-400 text-lg md:text-xl max-w-xl">
+          Discover the essential AI-powered tools designed to save you time, reduce cognitive overload, and help you stay ahead in medical school. HydraMed’s service hub brings together fast, accurate, and reliable solutions that streamline your workflow and let you focus on what truly matters: mastering medicine.
+        </p>
+      </div>
+      <!-- end of our services headers -->
+
+      <!-- our services demonstration -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 overflow-hidden gap-5 p-20">
+        <!-- TTS service -->
+        <div class="bg-violet-300 flex flex-col items-center justify-center p-10 hover:scale-105 hover:shadow-[0_0_50px_rgba(168,85,247,0.4)] transition-all rounded-3xl">
+          <!-- the TTS icon -->
+          <div class="size-30 rounded-full flex items-center justify-center bg-violet-600 mb-5">
+            <img src="./media/3/microphone.svg" alt="Rocket Icon" class="size-15 object-contain"/>
+          </div>
+          <!-- end of the TTS icon -->
+
+          <h3 class="mt-8 text-3xl md:text-4xl font-black text-violet-600 leading-tight">
+            TTS (Text-to-Speech)
+          </h3>
+          <p class="text-slate-950 text-lg font-medium leading-relaxed">
+            Transform dense medical texts into clear, natural audio you can listen to anywhere. Whether you’re commuting, revising, or multitasking, HydraMed’s TTS engine helps you learn effortlessly and retain more by turning your study material into hands-free learning sessions.
+          </p>
+        </div>
+        <!-- end of TTS service -->
+
+        <!-- Transcription service -->
+        <div class="bg-violet-300 flex flex-col items-center justify-center p-10 hover:scale-105 hover:shadow-[0_0_50px_rgba(168,85,247,0.4)] transition-all rounded-3xl">
+          <!-- the transcription icon -->
+          <div class="size-30 rounded-full flex items-center justify-center bg-violet-600 mb-5">
+            <img src="./media/3/edit.svg" alt="Rocket Icon" class="size-15 object-contain"/>
+          </div>
+          <!-- end of the transcription icon -->
+
+          <h3 class="mt-8 text-3xl md:text-4xl font-black text-violet-600 leading-tight">
+            Audio Transcription
+          </h3>
+          <p class="text-slate-950 text-lg font-medium leading-relaxed">
+            Stop wasting time transcribing lectures, clinical notes, or discussions. Our AI transcription service delivers precise, structured text in seconds—allowing you to quickly review, search, and use your information without manual effort. Perfect for fast revision and organized study notes.
+          </p>
+        </div>
+        <!-- end of Transcription service -->
+
+        <!-- Text Extraction service -->
+        <div class="bg-violet-300 flex flex-col items-center justify-center p-10 hover:scale-105 hover:shadow-[0_0_50px_rgba(168,85,247,0.4)] transition-all rounded-3xl">
+          <!-- the text extraction icon -->
+          <div class="size-30 rounded-full flex items-center justify-center bg-violet-600 mb-5">
+            <img src="./media/3/image-redo.svg" alt="Rocket Icon" class="size-15 object-contain"/>
+          </div>
+          <!-- end of the text extraction icon -->
+
+          <h3 class="mt-8 text-3xl md:text-4xl font-black text-violet-600 leading-tight">
+            Text Extraction From Image
+          </h3>
+          <p class="text-slate-950 text-lg font-medium leading-relaxed">
+            Take a photo of a textbook, slide, or handwritten note and instantly convert it into editable, searchable text. HydraMed’s image-to-text extraction makes studying more efficient by helping you capture important information on the go—no typing, no hassle, just clean text ready to use.
+          </p>
+        </div>
+        <!-- end of Text Extraction service -->
+      </div>
+      <!-- end of our services demonstration -->
+
+    </section>
+    <!-- end of our services section -->
+
+    <!-- testimonials section -->
+    <section id="testimonials" class="relative w-full px-14 md:px-22 py-14 md:py-22 snap-start snap-always">
+      <!-- testimonials headers -->
+      <div class="mb-10 max-x-4x h-full flex flex-col justify-center">
+        <h2 class="text-5xl md:text-7xl font-black tracking-tight mb-6 text-white">
+          <span class="block">Success Stories</span>
+          From <span class="text-violet-600">Our Clients</span>
+        </h2>
+        <p class="text-gray-400 text-lg md:text-xl max-w-xl">
+          Explore the firsthand experiences of those who chose to partner with us 
+          and witness the transformative power of our innovative solutions.
+        </p>
+      </div>
+      <!-- end of testimonials headers -->
+
+      <!-- testimonials masonry grid -->
+      <div class="columns-1 md:columns-2 lg:columns-4 gap-6 space-y-6">
+
+        <!-- CARD 1 -->
+        <div class="break-inside-avoid bg-purple-950 border border-white/10 p-6 rounded-2xl hover:violet-600/30 hover:scale-105 hover:shadow-[0_0_50px_rgba(168,85,247,0.4)] transition-all">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="https://i.pravatar.cc/300?img=11" alt="User" class="w-10 h-10 rounded-full border border-white/20">
+            <h4 class="text-violet-600 font-bold text-base">Amina Bensalem</h4>
+          </div>
+          <p class="text-gray-400 text-base leading-relaxed">
+            HydraMed saved me during my pediatrics rotation. I used the transcription tool for every lecture, and it helped me revise faster than ever. Honestly, this solved a big part of my stress.
+          </p>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="break-inside-avoid bg-purple-950 border border-white/10 p-6 rounded-2xl hover:violet-600/30 hover:scale-105 hover:shadow-[0_0_50px_rgba(168,85,247,0.4)] transition-all">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="https://i.pravatar.cc/300?img=12" alt="User" class="w-10 h-10 rounded-full border border-white/20">
+            <h4 class="text-violet-600 font-bold text-base">Yacine Belkacem</h4>
+          </div>
+          <p class="text-gray-400 text-base leading-relaxed">
+            As a 4th-year student, time is my biggest enemy. Your TTS feature lets me review lessons while I’m in transport between home and CHU. It became part of my daily routine.
+          </p>
+        </div>
+
+        <!-- CARD 3 (Longer text) -->
+        <div class="break-inside-avoid bg-purple-950 border border-white/10 p-6 rounded-2xl hover:violet-600/30 hover:scale-105 hover:shadow-[0_0_50px_rgba(168,85,247,0.4)] transition-all">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="https://i.pravatar.cc/300?img=5" alt="User" class="w-10 h-10 rounded-full border border-white/20">
+            <h4 class="text-violet-600 font-bold text-base">Samira Kerrou</h4>
+          </div>
+          <p class="text-gray-400 text-base leading-relaxed">
+            I used the image-to-text tool for all my pathology slides. It works flawlessly, even when the lighting is bad. It made studying so much easier!
+          </p>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="break-inside-avoid bg-purple-950 border border-white/10 p-6 rounded-2xl hover:violet-600/30 hover:scale-105 hover:shadow-[0_0_50px_rgba(168,85,247,0.4)] transition-all">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="https://i.pravatar.cc/300?img=60" alt="User" class="w-10 h-10 rounded-full border border-white/20">
+            <h4 class="text-violet-600 font-bold text-base">Mohamed Amine Zerkine</h4>
+          </div>
+          <p class="text-gray-400 text-base leading-relaxed">
+            I can’t believe how much time I wasted before discovering HydraMed. Transcribing long clinical seminars used to take me hours—now it’s minutes.
+          </p>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="break-inside-avoid bg-purple-950 border border-white/10 p-6 rounded-2xl hover:violet-600/30 hover:scale-105 hover:shadow-[0_0_50px_rgba(168,85,247,0.4)] transition-all">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="https://i.pravatar.cc/300?img=32" alt="User" class="w-10 h-10 rounded-full border border-white/20">
+            <h4 class="text-violet-600 font-bold text-base">Nadjib Aït Lounis</h4>
+          </div>
+          <p class="text-gray-400 text-base leading-relaxed">
+            Your tools feel like they were built by someone who truly understands med students. Everything is fast, accurate, and actually useful in real hospital life.
+          </p>
+        </div>
+
+        <!-- CARD 6 -->
+        <div class="break-inside-avoid bg-purple-950 border border-white/10 p-6 rounded-2xl hover:violet-600/30 hover:scale-105 hover:shadow-[0_0_50px_rgba(168,85,247,0.4)] transition-all">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="https://i.pravatar.cc/300?img=8" alt="User" class="w-10 h-10 rounded-full border border-white/20">
+            <h4 class="text-violet-600 font-bold text-base">Imène Chouikh</h4>
+          </div>
+          <p class="text-gray-400 text-base leading-relaxed">
+            HydraMed helped me survive my exam period. I converted all my notes into audio and listened during walks. My retention improved a lot.
+          </p>
+        </div>
+
+        <!-- CARD 7 -->
+        <div class="break-inside-avoid bg-purple-950 border border-white/10 p-6 rounded-2xl hover:violet-600/30 hover:scale-105 hover:shadow-[0_0_50px_rgba(168,85,247,0.4)] transition-all">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="https://i.pravatar.cc/300?img=59" alt="User" class="w-10 h-10 rounded-full border border-white/20">
+            <h4 class="text-violet-600 font-bold text-base">Riad Bouzidi</h4>
+          </div>
+          <p class="text-gray-400 text-base leading-relaxed">
+            During emergency rotation, I barely had time to breathe. Being able to snap a picture of notes and get clean text instantly was a lifesaver.
+          </p>
+        </div>
+
+        <!-- CARD 8 -->
+        <div class="break-inside-avoid bg-purple-950 border border-white/10 p-6 rounded-2xl hover:violet-600/30 hover:scale-105 hover:shadow-[0_0_50px_rgba(168,85,247,0.4)] transition-all">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="https://i.pravatar.cc/300?img=59" alt="User" class="w-10 h-10 rounded-full border border-white/20">
+            <h4 class="text-violet-600 font-bold text-base">Lilia Saadi</h4>
+          </div>
+          <p class="text-gray-400 text-base leading-relaxed">
+            I love how simple everything is. No complicated interface, no unnecessary steps. Just results. Every student should be using this.
+          </p>
+        </div>
+
+        <!-- CARD 9 -->
+        <div class="break-inside-avoid bg-purple-950 border border-white/10 p-6 rounded-2xl hover:violet-600/30 hover:scale-105 hover:shadow-[0_0_50px_rgba(168,85,247,0.4)] transition-all">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="https://i.pravatar.cc/300?img=59" alt="User" class="w-10 h-10 rounded-full border border-white/20">
+            <h4 class="text-violet-600 font-bold text-base">Sofiane Mehenni</h4>
+          </div>
+          <p class="text-gray-400 text-base leading-relaxed">
+            I tested many transcription tools before, but none matched HydraMed’s accuracy for medical terminology. It feels like it’s trained for med school.
+          </p>
+        </div>
+
+        <!-- CARD 10 -->
+        <div class="break-inside-avoid bg-purple-950 border border-white/10 p-6 rounded-2xl hover:violet-600/30 hover:scale-105 hover:shadow-[0_0_50px_rgba(168,85,247,0.4)] transition-all">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="https://i.pravatar.cc/300?img=59" alt="User" class="w-10 h-10 rounded-full border border-white/20">
+            <h4 class="text-violet-600 font-bold text-base">Sara Merzoug</h4>
+          </div>
+          <p class="text-gray-400 text-base leading-relaxed">
+            The TTS is incredibly natural. I listened to all my cardiology lessons this way. It made long study sessions less painful and more productive.
+          </p>
+        </div>
+
+        <!-- CARD 11 -->
+        <div class="break-inside-avoid bg-purple-950 border border-white/10 p-6 rounded-2xl hover:violet-600/30 hover:scale-105 hover:shadow-[0_0_50px_rgba(168,85,247,0.4)] transition-all">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="https://i.pravatar.cc/300?img=59" alt="User" class="w-10 h-10 rounded-full border border-white/20">
+            <h4 class="text-violet-600 font-bold text-base">Abdelkrim Benyahia</h4>
+          </div>
+          <p class="text-gray-400 text-base leading-relaxed">
+            HydraMed became my secret study weapon. My summary notes are now clean, organized, and searchable thanks to the text extraction tool.
+          </p>
+        </div>
+
+        <!-- CARD 12 -->
+        <div class="break-inside-avoid bg-purple-950 border border-white/10 p-6 rounded-2xl hover:violet-600/30 hover:scale-105 hover:shadow-[0_0_50px_rgba(168,85,247,0.4)] transition-all">
+          <div class="flex items-center gap-3 mb-4">
+            <img src="https://i.pravatar.cc/300?img=59" alt="User" class="w-10 h-10 rounded-full border border-white/20">
+            <h4 class="text-violet-600 font-bold text-base">Nahla Ouahab</h4>
+          </div>
+          <p class="text-gray-400 text-base leading-relaxed">
+            I recommended HydraMed to my whole group. We all agree: this is the first Algerian-made tool that truly matches our needs as medical students. Bravo!
+          </p>
+        </div>
+
+      </div>
+      <!-- end of testimonials masonry grid -->
+
+      <!-- the fade out effect -->
+      <div class="absolute bottom-0 left-0 w-full h-80 bg-gradient-to-t from-black via-black/90 to-transparent pointer-events-none"></div>
+      <!-- end of the fade out effect -->
+    </section>
+    <!-- end of testimonials section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- FAQ section -->
+    <section id="services" class="relative w-full px-14 md:px-22 py-14 md:py-22 snap-start snap-always">
+      <!-- FAQ headers -->
+      <div class="max-x-4x h-full flex flex-col items-center justify-center">
+        <h2 class="text-5xl md:text-7xl font-black tracking-tight mb-6 text-white leading-[1.2]">
+          <span class="block text-center">Frequently Asked</span>
+          <span class="text-violet-600 block text-center">Questions</span>
+        </h2>
+        <p class="text-gray-400 text-lg md:text-xl max-w-xl">
+          We address common queries, demystify intricacies, and provide insights to guide you through our services.
+        </p>
+      </div>
+      <!-- end of FAQ headers -->
+
+      <!-- FAQ demonstration -->
+      <div class="space-y-4 mt-10">
+        <!-- question 1 -->
+        <details class="group bg-violet-100 rounded-3xl overflow-hidden open">
+          <!-- clickable header -->
+          <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+            <span class="text-xl text-black font-bold px-5">How can I pay for HydraMed’s services if I’m a student in Algeria?</span>
+            <div class="flex items-center justify-center w-20 h-20 bg-violet-600 rounded-3xl group-open:rounded-b-none">
+              <img src="./media/3/plus.svg" alt="Plus Icon" class="h-10 w-10 group-open:rotate-45 transition-transform duration-300"/>
+            </div>
+          </summary>
+          <!-- end of clickable header -->
+
+          <!-- answer -->
+          <div class="p-5 bg-violet-950">
+            <p class="text-violet-100 leading-relaxed text-lg">
+              You can pay easily using your El-Dahabia card. After entering your card information, you’ll receive a confirmation SMS within seconds to validate the payment. Just confirm the code, and you're done — fast, secure, and fully supported inside Algeria.
+            </p>
+          </div>
+          <!-- end of answer -->
+        </details>
+        <!-- end of question 1 -->
+
+        <!-- question 2 -->
+        <details class="group bg-violet-100 rounded-3xl overflow-hidden open">
+          <!-- clickable header -->
+          <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+            <span class="text-xl text-black font-bold px-5">How can HydraMed’s tools be customized for my needs?</span>
+            <div class="flex items-center justify-center w-20 h-20 bg-violet-600 rounded-3xl group-open:rounded-b-none">
+              <img src="./media/3/plus.svg" alt="Plus Icon" class="h-10 w-10 group-open:rotate-45 transition-transform duration-300"/>
+            </div>
+          </summary>
+          <!-- end of clickable header -->
+
+          <!-- answer -->
+          <div class="p-5 bg-violet-950">
+            <p class="text-violet-100 leading-relaxed text-lg">
+              HydraMed adapts to your workflow by offering flexible AI tools that work with any type of medical content—audio, text, or images. Whether you're a student, intern, or clinician, each tool is designed to fit seamlessly into your study or clinical routine, saving you time with minimal setup.
+            </p>
+          </div>
+          <!-- end of answer -->
+        </details>
+        <!-- end of question 2 -->
+
+        <!-- question 3 -->
+        <details class="group bg-violet-100 rounded-3xl overflow-hidden open">
+          <!-- clickable header -->
+          <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+            <span class="text-xl text-black font-bold px-5">How accurate is your audio transcription service?</span>
+            <div class="flex items-center justify-center w-20 h-20 bg-violet-600 rounded-3xl group-open:rounded-b-none">
+              <img src="./media/3/plus.svg" alt="Plus Icon" class="h-10 w-10 group-open:rotate-45 transition-transform duration-300"/>
+            </div>
+          </summary>
+          <!-- end of clickable header -->
+
+          <!-- answer -->
+          <div class="p-5 bg-violet-950">
+            <p class="text-violet-100 leading-relaxed text-lg">
+              Our transcription engine is optimized for medical environments and performs exceptionally well with lectures, discussions, and clinical recordings. While accuracy may vary depending on audio quality, HydraMed consistently delivers clean, structured text ready for studying or documentation.
+            </p>
+          </div>
+          <!-- end of answer -->
+        </details>
+        <!-- end of question 3 -->
+
+        <!-- question 4 -->
+        <details class="group bg-violet-100 rounded-3xl overflow-hidden open">
+          <!-- clickable header -->
+          <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+            <span class="text-xl text-black font-bold px-5">How does your TTS (Text-to-Speech) help with studying?</span>
+            <div class="flex items-center justify-center w-20 h-20 bg-violet-600 rounded-3xl group-open:rounded-b-none">
+              <img src="./media/3/plus.svg" alt="Plus Icon" class="h-10 w-10 group-open:rotate-45 transition-transform duration-300"/>
+            </div>
+          </summary>
+          <!-- end of clickable header -->
+
+          <!-- answer -->
+          <div class="p-5 bg-violet-950">
+            <p class="text-violet-100 leading-relaxed text-lg">
+              HydraMed’s TTS converts any medical text—summaries, PDFs, notes—into clear audio you can listen to anywhere. It’s perfect for revision during commutes, workouts, or while resting, allowing you to absorb more information without needing to sit down and read.
+            </p>
+          </div>
+          <!-- end of answer -->
+        </details>
+        <!-- end of question 4 -->
+
+        <!-- question 5 -->
+        <details class="group bg-violet-100 rounded-3xl overflow-hidden open">
+          <!-- clickable header -->
+          <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+            <span class="text-xl text-black font-bold px-5">What can I extract from an image using HydraMed?</span>
+            <div class="flex items-center justify-center w-20 h-20 bg-violet-600 rounded-3xl group-open:rounded-b-none">
+              <img src="./media/3/plus.svg" alt="Plus Icon" class="h-10 w-10 group-open:rotate-45 transition-transform duration-300"/>
+            </div>
+          </summary>
+          <!-- end of clickable header -->
+
+          <!-- answer -->
+          <div class="p-5 bg-violet-950">
+            <p class="text-violet-100 leading-relaxed text-lg">
+              You can capture text from textbooks, slides, handwritten notes, prescriptions, or clinical sheets. HydraMed instantly transforms these images into clean, editable text, making your studying faster and eliminating manual typing.
+            </p>
+          </div>
+          <!-- end of answer -->
+        </details>
+        <!-- end of question 5 -->
+
+        <!-- question 6 -->
+        <details class="group bg-violet-100 rounded-3xl overflow-hidden open">
+          <!-- clickable header -->
+          <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+            <span class="text-xl text-black font-bold px-5">Do I need any technical skills to use HydraMed?</span>
+            <div class="flex items-center justify-center w-20 h-20 bg-violet-600 rounded-3xl group-open:rounded-b-none">
+              <img src="./media/3/plus.svg" alt="Plus Icon" class="h-10 w-10 group-open:rotate-45 transition-transform duration-300"/>
+            </div>
+          </summary>
+          <!-- end of clickable header -->
+
+          <!-- answer -->
+          <div class="p-5 bg-violet-950">
+            <p class="text-violet-100 leading-relaxed text-lg">
+              Not at all. Our tools are designed to be simple and intuitive. Upload, click, and get your result—no setup, no complicated configuration, and no technical background required.
+            </p>
+          </div>
+          <!-- end of answer -->
+        </details>
+        <!-- end of question 6 -->
+
+        <!-- question 7 -->
+        <details class="group bg-violet-100 rounded-3xl overflow-hidden open">
+          <!-- clickable header -->
+          <summary class="flex items-center justify-between cursor-pointer list-none select-none">
+            <span class="text-xl text-black font-bold px-5">How do I get started with HydraMed?</span>
+            <div class="flex items-center justify-center w-20 h-20 bg-violet-600 rounded-3xl group-open:rounded-b-none">
+              <img src="./media/3/plus.svg" alt="Plus Icon" class="h-10 w-10 group-open:rotate-45 transition-transform duration-300"/>
+            </div>
+          </summary>
+          <!-- end of clickable header -->
+
+          <!-- answer -->
+          <div class="p-5 bg-violet-950">
+            <p class="text-violet-100 leading-relaxed text-lg">
+              Just sign in, choose the tool you need (TTS, transcription, or image extraction), and upload your content. HydraMed handles the rest instantly. You can begin using all services right away with no learning curve.
+            </p>
+          </div>
+          <!-- end of answer -->
+        </details>
+        <!-- end of question 7 -->
+      </div>
+      <!-- end FAQ services demonstration -->
+
+    </section>
+    <!-- end of FAQ section -->
+  </body>
+</html>
